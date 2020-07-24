@@ -37,6 +37,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C8E3F8A24CA67AF003D5BA6 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9CC10AB9249DAC1D008020D7 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		9C8E3F8B24CA67C0003D5BA6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9CC10AB7249DAC1D008020D7 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9C8E3F8C24CA67C9003D5BA6 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				9C8E3F8D24CA67D1003D5BA6 /* TableViewCell */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		9C8E3F8D24CA67D1003D5BA6 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		9CC10AA7249DAC1D008020D7 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +87,11 @@
 		9CC10AB2249DAC1D008020D7 /* FirebaseSampleCodeForUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				9C8E3F8C24CA67C9003D5BA6 /* CustomView */,
+				9C8E3F8B24CA67C0003D5BA6 /* ViewController */,
+				9C8E3F8A24CA67AF003D5BA6 /* Storyboard */,
 				9CC10AB3249DAC1D008020D7 /* AppDelegate.swift */,
 				9CC10AB5249DAC1D008020D7 /* SceneDelegate.swift */,
-				9CC10AB7249DAC1D008020D7 /* ViewController.swift */,
-				9CC10AB9249DAC1D008020D7 /* Main.storyboard */,
 				9CC10ABC249DAC21008020D7 /* Assets.xcassets */,
 				9CC10ABE249DAC21008020D7 /* LaunchScreen.storyboard */,
 				9CC10AC1249DAC21008020D7 /* Info.plist */,
