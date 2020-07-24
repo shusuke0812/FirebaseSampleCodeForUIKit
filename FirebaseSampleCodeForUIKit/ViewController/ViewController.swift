@@ -17,6 +17,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         tableView.dataSource = self
         tableView.delegate = self
+        
+        // セルタップを無効にする
+        tableView.allowsSelection = false
+        
+        // TableViewCellを読み込み
+        let nib = UINib(nibName: "TableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "Cell")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
