@@ -10,6 +10,13 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    @IBOutlet weak var atmImage: UIImageView!
+    @IBOutlet weak var atmKind: UILabel!
+    @IBOutlet weak var atmName: UILabel!
+    @IBOutlet weak var atmAddress: UILabel!
+    @IBOutlet weak var atmFavoriteLabel: UIButton!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +27,7 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    @IBAction func atmFavoriteButton(_ sender: Any) {
+    }
+    
 }
