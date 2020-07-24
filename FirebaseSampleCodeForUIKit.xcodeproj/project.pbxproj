@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C8E3F8F24CA6968003D5BA6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8E3F8E24CA6967003D5BA6 /* TableViewCell.swift */; };
+		9C8E3F9124CA6A29003D5BA6 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C8E3F9024CA6A29003D5BA6 /* TableViewCell.xib */; };
 		9CC10AB4249DAC1D008020D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC10AB3249DAC1D008020D7 /* AppDelegate.swift */; };
 		9CC10AB6249DAC1D008020D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC10AB5249DAC1D008020D7 /* SceneDelegate.swift */; };
 		9CC10AB8249DAC1D008020D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC10AB7249DAC1D008020D7 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C8E3F8E24CA6967003D5BA6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		9C8E3F9024CA6A29003D5BA6 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		9CC10AB0249DAC1D008020D7 /* FirebaseSampleCodeForUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseSampleCodeForUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC10AB3249DAC1D008020D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CC10AB5249DAC1D008020D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 		9C8E3F8D24CA67D1003D5BA6 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				9C8E3F8E24CA6967003D5BA6 /* TableViewCell.swift */,
+				9C8E3F9024CA6A29003D5BA6 /* TableViewCell.xib */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -158,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CC10AC0249DAC21008020D7 /* LaunchScreen.storyboard in Resources */,
+				9C8E3F9124CA6A29003D5BA6 /* TableViewCell.xib in Resources */,
 				9CC10ABD249DAC21008020D7 /* Assets.xcassets in Resources */,
 				9CC10ABB249DAC1D008020D7 /* Main.storyboard in Resources */,
 			);
@@ -171,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CC10AB8249DAC1D008020D7 /* ViewController.swift in Sources */,
+				9C8E3F8F24CA6968003D5BA6 /* TableViewCell.swift in Sources */,
 				9CC10AB4249DAC1D008020D7 /* AppDelegate.swift in Sources */,
 				9CC10AB6249DAC1D008020D7 /* SceneDelegate.swift in Sources */,
 			);
