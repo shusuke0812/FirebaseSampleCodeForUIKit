@@ -28,9 +28,16 @@
                                     <action selector="didTapCloseButton:" destination="1sb-kX-eys" eventType="touchUpInside" id="chB-Qh-g4r"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oX5-L6-jcV">
+                                <rect key="frame" x="365" y="64" width="19" height="22"/>
+                                <color key="tintColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="square.and.arrow.up" catalog="system"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="v94-MW-7Vs" firstAttribute="trailing" secondItem="oX5-L6-jcV" secondAttribute="trailing" constant="30" id="TEy-Wa-lxr"/>
+                            <constraint firstItem="oX5-L6-jcV" firstAttribute="top" secondItem="v94-MW-7Vs" secondAttribute="top" constant="20" id="bm6-k5-Rig"/>
                             <constraint firstItem="dQy-Wj-05j" firstAttribute="top" secondItem="v94-MW-7Vs" secondAttribute="top" constant="20" id="mbZ-v9-ptp"/>
                             <constraint firstItem="dQy-Wj-05j" firstAttribute="leading" secondItem="v94-MW-7Vs" secondAttribute="leading" constant="30" id="miV-K1-gDZ"/>
                         </constraints>
@@ -39,10 +46,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMW-3t-5e3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="84" y="151"/>
+            <point key="canvasLocation" x="65" y="27"/>
         </scene>
     </scenes>
     <resources>
         <image name="multiply" catalog="system" width="128" height="111"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
     </resources>
 </document>
