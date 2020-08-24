@@ -8,7 +8,8 @@ FirebaseとUIKitで作るATM検索アプリ
 
 ## 概要
 - Firebase Cloud Firestorのデータ読み込み、書き込みをUIKitで実装するサンプルアプリ
-- アプリの内容は地図上にATMの場所を表示する
+- アプリの内容は地図上にATMの場所を表示する  
+- シェアボタンからslack、twitterなどのSNSにアプリのユニバーサルリンクを貼る
 
 ## システム構成
 - 準備中
