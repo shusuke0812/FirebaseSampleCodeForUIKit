@@ -7,5 +7,6 @@ target 'FirebaseSampleCodeForUIKit' do
 
   # Firebase
   pod 'Firebase/Analytics'
+  pod 'Firebase/DynamicLinks'
 
 end
