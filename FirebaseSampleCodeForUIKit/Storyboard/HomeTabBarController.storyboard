@@ -44,11 +44,11 @@
             </objects>
             <point key="canvasLocation" x="-206" y="125"/>
         </scene>
-        <!--Item 1-->
+        <!--Read-->
         <scene sceneID="vRc-dk-szH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UFz-zg-Hta" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="tg5-ab-0AA"/>
+                    <tabBarItem key="tabBarItem" title="Read" image="list.bullet" catalog="system" id="tg5-ab-0AA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jLX-4r-vaN">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -63,11 +63,11 @@
             </objects>
             <point key="canvasLocation" x="-746.37681159420299" y="847.76785714285711"/>
         </scene>
-        <!--Item 2-->
+        <!--Create-->
         <scene sceneID="D6l-DA-Q7C">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oeg-Ew-CCQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="ZnN-4Y-T9R"/>
+                    <tabBarItem key="tabBarItem" title="Create" image="location.fill" catalog="system" id="ZnN-4Y-T9R"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AQB-gB-5CR">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -83,4 +83,8 @@
             <point key="canvasLocation" x="305.79710144927537" y="847.76785714285711"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="list.bullet" catalog="system" width="128" height="88"/>
+        <image name="location.fill" catalog="system" width="128" height="115"/>
+    </resources>
 </document>
