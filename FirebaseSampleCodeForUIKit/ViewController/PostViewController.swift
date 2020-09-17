@@ -15,6 +15,7 @@ class PostViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setUI()
     }
     @IBAction func changeImageViewButton(_ sender: Any) {
         guard let image = self.imageView?.image else { return }
@@ -29,5 +30,13 @@ class PostViewController: UIViewController {
                 print(err)
             }
         }
+    }
+}
+
+extension PostViewController {
+    func setUI() {
+        // imageViewを円にする
+        self.imageView.clipsToBounds = true
+        self.imageView.layer.cornerRadius = self.imageView.frame.width / 2
     }
 }
