@@ -11,7 +11,6 @@
 		9C8E3F8F24CA6968003D5BA6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8E3F8E24CA6967003D5BA6 /* TableViewCell.swift */; };
 		9C8E3F9124CA6A29003D5BA6 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C8E3F9024CA6A29003D5BA6 /* TableViewCell.xib */; };
 		9CC10AB4249DAC1D008020D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC10AB3249DAC1D008020D7 /* AppDelegate.swift */; };
-		9CC10AB6249DAC1D008020D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC10AB5249DAC1D008020D7 /* SceneDelegate.swift */; };
 		9CC10AB8249DAC1D008020D7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC10AB7249DAC1D008020D7 /* MainViewController.swift */; };
 		9CC10ABB249DAC1D008020D7 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC10AB9249DAC1D008020D7 /* MainViewController.storyboard */; };
 		9CC10ABD249DAC21008020D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC10ABC249DAC21008020D7 /* Assets.xcassets */; };
@@ -21,6 +20,8 @@
 		9CDEFED024F4068800083D36 /* MainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDEFECF24F4068800083D36 /* MainDetailViewController.swift */; };
 		9CDEFED224F4069C00083D36 /* MainDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CDEFED124F4069C00083D36 /* MainDetailViewController.storyboard */; };
 		9CDEFED424F4232900083D36 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CDEFED324F4232800083D36 /* GoogleService-Info.plist */; };
+		9CEC0D9E251354610045A7FF /* PostViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC0D9D251354610045A7FF /* PostViewController.storyboard */; };
+		9CEC0DA02513546F0045A7FF /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC0D9F2513546F0045A7FF /* PostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +31,6 @@
 		9C8E3F9024CA6A29003D5BA6 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		9CC10AB0249DAC1D008020D7 /* FirebaseSampleCodeForUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseSampleCodeForUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC10AB3249DAC1D008020D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9CC10AB5249DAC1D008020D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9CC10AB7249DAC1D008020D7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9CC10ABA249DAC1D008020D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainViewController.storyboard; sourceTree = "<group>"; };
 		9CC10ABC249DAC21008020D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +41,8 @@
 		9CDEFECF24F4068800083D36 /* MainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailViewController.swift; sourceTree = "<group>"; };
 		9CDEFED124F4069C00083D36 /* MainDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainDetailViewController.storyboard; sourceTree = "<group>"; };
 		9CDEFED324F4232800083D36 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9CEC0D9D251354610045A7FF /* PostViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostViewController.storyboard; sourceTree = "<group>"; };
+		9CEC0D9F2513546F0045A7FF /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		E9EFC205D9AAA6F00A8C1A19 /* Pods_FirebaseSampleCodeForUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseSampleCodeForUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -62,6 +64,7 @@
 				9CCDE42625134EC800FBA1CE /* HomeTabBarController.storyboard */,
 				9CC10AB9249DAC1D008020D7 /* MainViewController.storyboard */,
 				9CDEFED124F4069C00083D36 /* MainDetailViewController.storyboard */,
+				9CEC0D9D251354610045A7FF /* PostViewController.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -72,6 +75,7 @@
 				9CCDE4282513502B00FBA1CE /* HomeTabBarControllerViewController.swift */,
 				9CC10AB7249DAC1D008020D7 /* MainViewController.swift */,
 				9CDEFECF24F4068800083D36 /* MainDetailViewController.swift */,
+				9CEC0D9F2513546F0045A7FF /* PostViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -118,7 +122,6 @@
 				9C8E3F8B24CA67C0003D5BA6 /* ViewController */,
 				9C8E3F8A24CA67AF003D5BA6 /* Storyboard */,
 				9CC10AB3249DAC1D008020D7 /* AppDelegate.swift */,
-				9CC10AB5249DAC1D008020D7 /* SceneDelegate.swift */,
 				9CC10ABC249DAC21008020D7 /* Assets.xcassets */,
 				9CC10ABE249DAC21008020D7 /* LaunchScreen.storyboard */,
 				9CDEFED324F4232800083D36 /* GoogleService-Info.plist */,
@@ -205,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CC10AC0249DAC21008020D7 /* LaunchScreen.storyboard in Resources */,
+				9CEC0D9E251354610045A7FF /* PostViewController.storyboard in Resources */,
 				9C8E3F9124CA6A29003D5BA6 /* TableViewCell.xib in Resources */,
 				9CC10ABD249DAC21008020D7 /* Assets.xcassets in Resources */,
 				9CDEFED224F4069C00083D36 /* MainDetailViewController.storyboard in Resources */,
@@ -263,12 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CEC0DA02513546F0045A7FF /* PostViewController.swift in Sources */,
 				9CC10AB8249DAC1D008020D7 /* MainViewController.swift in Sources */,
 				9CDEFED024F4068800083D36 /* MainDetailViewController.swift in Sources */,
 				9C8E3F8F24CA6968003D5BA6 /* TableViewCell.swift in Sources */,
 				9CCDE4292513502B00FBA1CE /* HomeTabBarControllerViewController.swift in Sources */,
 				9CC10AB4249DAC1D008020D7 /* AppDelegate.swift in Sources */,
-				9CC10AB6249DAC1D008020D7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
