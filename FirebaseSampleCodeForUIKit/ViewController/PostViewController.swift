@@ -25,18 +25,7 @@ class PostViewController: UIViewController {
         self.openImagePicker()
     }
     @IBAction func saveImageViewButton(_ sender: Any) {
-        guard let image = self.imageView?.image else { return }
-        guard let uploadImage = image.jpegData(compressionQuality: 0.3) else { return }
-        
-        let fileName = NSUUID().uuidString
-        let storageRef = Storage.storage().reference().child("user_image").child(fileName)
-        
-        storageRef.putData(uploadImage, metadata: nil) { (metadata, err) in
-            if let err = err {
-                print("DEBUG： FireStorageへの情報保存に失敗しました")
-                print(err)
-            }
-        }
+        self.postImageToFirestore()
     }
 }
 
@@ -61,5 +50,24 @@ extension PostViewController: UIImagePickerControllerDelegate, UINavigationContr
     func cropViewController(_ cropViewController: CropViewController, didCropToCircularImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
         self.imageView.image = image
         cropViewController.dismiss(animated: true, completion: nil)
+    }
+}
+
+extension PostViewController {
+     // Firebase Storageへデータを保存する
+    func postImageToFirestore() {
+        guard let image = self.imageView?.image else { return }
+        guard let uploadImage = image.jpegData(compressionQuality: 0.3) else { return }
+        
+        let fileName = NSUUID().uuidString
+        let filePath: String = "users/icon_image/"
+        let storageRef = Storage.storage().reference().child(filePath).child(fileName)
+        
+        storageRef.putData(uploadImage, metadata: nil) { (metadata, err) in
+            if let err = err {
+                print("DEBUG： FireStorageへの情報保存に失敗しました")
+                print(err)
+            }
+        }
     }
 }
