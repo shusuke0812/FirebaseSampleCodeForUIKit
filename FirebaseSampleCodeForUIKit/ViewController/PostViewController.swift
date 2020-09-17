@@ -18,6 +18,8 @@ class PostViewController: UIViewController {
         self.setUI()
     }
     @IBAction func changeImageViewButton(_ sender: Any) {
+        // imagePickerを起動
+        self.openImagePicker()
         guard let image = self.imageView?.image else { return }
         guard let uploadImage = image.jpegData(compressionQuality: 0.3) else { return }
         
