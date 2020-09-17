@@ -14,7 +14,27 @@
                     <view key="view" contentMode="scaleToFill" id="nNW-n7-kZc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jx-Yq-R7A">
+                                <rect key="frame" x="168.5" y="433" width="77" height="30"/>
+                                <state key="normal" title="写真を設定"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ksU-FK-aIB">
+                                <rect key="frame" x="142" y="288" width="130" height="130"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="cWy-IQ-Xgr"/>
+                                    <constraint firstAttribute="height" constant="130" id="kYX-J0-flA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4jx-Yq-R7A" firstAttribute="centerY" secondItem="nNW-n7-kZc" secondAttribute="centerY" id="K6p-gc-d4z"/>
+                            <constraint firstItem="4jx-Yq-R7A" firstAttribute="centerX" secondItem="nNW-n7-kZc" secondAttribute="centerX" id="LGC-Gk-LGz"/>
+                            <constraint firstItem="4jx-Yq-R7A" firstAttribute="top" secondItem="ksU-FK-aIB" secondAttribute="bottom" constant="15" id="SUA-dp-VH7"/>
+                            <constraint firstItem="ksU-FK-aIB" firstAttribute="centerX" secondItem="nNW-n7-kZc" secondAttribute="centerX" id="nht-6v-HNi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="T65-WW-St3"/>
                     </view>
                 </viewController>
