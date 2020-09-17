@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CropViewController
 import Firebase
 
 class PostViewController: UIViewController {
@@ -23,6 +24,7 @@ class PostViewController: UIViewController {
         guard let image = self.imageView?.image else { return }
         guard let uploadImage = image.jpegData(compressionQuality: 0.3) else { return }
         
+        // Storageへの登録
         let fileName = NSUUID().uuidString
         let storageRef = Storage.storage().reference().child("user_image").child(fileName)
         
@@ -40,5 +42,20 @@ extension PostViewController {
         // imageViewを円にする
         self.imageView.clipsToBounds = true
         self.imageView.layer.cornerRadius = self.imageView.frame.width / 2
+    }
+}
+
+extension PostViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate, CropViewControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let originalImage: UIImage = (info[UIImagePickerController.InfoKey.originalImage] as? UIImage) else { return }
+        let cropVC: CropViewController = CropViewController(croppingStyle: .circular, image: originalImage)
+        cropVC.delegate = self
+        picker.dismiss(animated: true, completion: {
+            self.present(cropVC, animated: true, completion: nil)
+        })
+    }
+    func cropViewController(_ cropViewController: CropViewController, didCropToCircularImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
+        self.imageView.image = image
+        cropViewController.dismiss(animated: false, completion: nil)
     }
 }
