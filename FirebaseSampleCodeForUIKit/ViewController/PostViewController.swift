@@ -14,17 +14,20 @@ class PostViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUI()
     }
-    @IBAction func changeImageViewButton(_ sender: Any) {
-        // imagePickerを起動
+    // MARK: - Action Method
+    @IBAction func tapImageView(_ sender: Any) {
+        print("DEBUG： 写真がタップされました")
         self.openImagePicker()
+    }
+    @IBAction func saveImageViewButton(_ sender: Any) {
         guard let image = self.imageView?.image else { return }
         guard let uploadImage = image.jpegData(compressionQuality: 0.3) else { return }
         
-        // Storageへの登録
         let fileName = NSUUID().uuidString
         let storageRef = Storage.storage().reference().child("user_image").child(fileName)
         
@@ -37,6 +40,7 @@ class PostViewController: UIViewController {
     }
 }
 
+// MARK: - Private Method
 extension PostViewController {
     func setUI() {
         // imageViewを円にする
@@ -56,6 +60,6 @@ extension PostViewController: UIImagePickerControllerDelegate, UINavigationContr
     }
     func cropViewController(_ cropViewController: CropViewController, didCropToCircularImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
         self.imageView.image = image
-        cropViewController.dismiss(animated: false, completion: nil)
+        cropViewController.dismiss(animated: true, completion: nil)
     }
 }
