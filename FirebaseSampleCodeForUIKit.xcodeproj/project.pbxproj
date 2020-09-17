@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		9CC10ABB249DAC1D008020D7 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC10AB9249DAC1D008020D7 /* MainViewController.storyboard */; };
 		9CC10ABD249DAC21008020D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC10ABC249DAC21008020D7 /* Assets.xcassets */; };
 		9CC10AC0249DAC21008020D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC10ABE249DAC21008020D7 /* LaunchScreen.storyboard */; };
+		9CCDE42725134EC800FBA1CE /* HomeTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CCDE42625134EC800FBA1CE /* HomeTabBarController.storyboard */; };
+		9CCDE4292513502B00FBA1CE /* HomeTabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCDE4282513502B00FBA1CE /* HomeTabBarControllerViewController.swift */; };
 		9CDEFED024F4068800083D36 /* MainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDEFECF24F4068800083D36 /* MainDetailViewController.swift */; };
 		9CDEFED224F4069C00083D36 /* MainDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CDEFED124F4069C00083D36 /* MainDetailViewController.storyboard */; };
 		9CDEFED424F4232900083D36 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CDEFED324F4232800083D36 /* GoogleService-Info.plist */; };
@@ -34,6 +36,8 @@
 		9CC10ABC249DAC21008020D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CC10ABF249DAC21008020D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CC10AC1249DAC21008020D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CCDE42625134EC800FBA1CE /* HomeTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTabBarController.storyboard; sourceTree = "<group>"; };
+		9CCDE4282513502B00FBA1CE /* HomeTabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarControllerViewController.swift; sourceTree = "<group>"; };
 		9CDEFECF24F4068800083D36 /* MainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailViewController.swift; sourceTree = "<group>"; };
 		9CDEFED124F4069C00083D36 /* MainDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainDetailViewController.storyboard; sourceTree = "<group>"; };
 		9CDEFED324F4232800083D36 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -55,6 +59,7 @@
 		9C8E3F8A24CA67AF003D5BA6 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				9CCDE42625134EC800FBA1CE /* HomeTabBarController.storyboard */,
 				9CC10AB9249DAC1D008020D7 /* MainViewController.storyboard */,
 				9CDEFED124F4069C00083D36 /* MainDetailViewController.storyboard */,
 			);
@@ -64,6 +69,7 @@
 		9C8E3F8B24CA67C0003D5BA6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				9CCDE4282513502B00FBA1CE /* HomeTabBarControllerViewController.swift */,
 				9CC10AB7249DAC1D008020D7 /* MainViewController.swift */,
 				9CDEFECF24F4068800083D36 /* MainDetailViewController.swift */,
 			);
@@ -127,7 +133,6 @@
 				7ACA4749F43F775A427BD212 /* Pods-FirebaseSampleCodeForUIKit.debug.xcconfig */,
 				5BE710D630BE74117C7A67EA /* Pods-FirebaseSampleCodeForUIKit.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -205,6 +210,7 @@
 				9CDEFED224F4069C00083D36 /* MainDetailViewController.storyboard in Resources */,
 				9CC10ABB249DAC1D008020D7 /* MainViewController.storyboard in Resources */,
 				9CDEFED424F4232900083D36 /* GoogleService-Info.plist in Resources */,
+				9CCDE42725134EC800FBA1CE /* HomeTabBarController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +266,7 @@
 				9CC10AB8249DAC1D008020D7 /* MainViewController.swift in Sources */,
 				9CDEFED024F4068800083D36 /* MainDetailViewController.swift in Sources */,
 				9C8E3F8F24CA6968003D5BA6 /* TableViewCell.swift in Sources */,
+				9CCDE4292513502B00FBA1CE /* HomeTabBarControllerViewController.swift in Sources */,
 				9CC10AB4249DAC1D008020D7 /* AppDelegate.swift in Sources */,
 				9CC10AB6249DAC1D008020D7 /* SceneDelegate.swift in Sources */,
 			);
