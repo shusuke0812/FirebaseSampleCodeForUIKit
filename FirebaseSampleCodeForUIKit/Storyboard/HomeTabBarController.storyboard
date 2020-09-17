@@ -16,20 +16,20 @@
             </objects>
             <point key="canvasLocation" x="-746" y="1316"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--PostViewController-->
         <scene sceneID="qLD-14-Wws">
             <objects>
-                <viewControllerPlaceholder id="tDi-iW-ghP" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="PostViewController" id="tDi-iW-ghP" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="waF-Ca-jO3"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFb-ej-Xe8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="307" y="1316"/>
         </scene>
-        <!--Home Tab Bar Controller-->
+        <!--Home Tab Bar Controller View Controller-->
         <scene sceneID="t6a-9v-e8b">
             <objects>
-                <tabBarController id="oGZ-yw-6Jl" customClass="HomeTabBarController" sceneMemberID="viewController">
+                <tabBarController id="oGZ-yw-6Jl" customClass="HomeTabBarControllerViewController" customModule="FirebaseSampleCodeForUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SuB-9B-00Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
