@@ -9,6 +9,12 @@ target 'FirebaseSampleCodeForUIKit' do
   pod 'Firebase/Analytics'
   pod 'Firebase/DynamicLinks'
 	pod 'Firebase/Storage'
+	pod 'Firebase/Auth'
+	pod 'Firebase/Core'
+	pod 'Firebase/Firestore'
+	pod 'Firebase/Functions'
+
+  # etc
 	pod 'CropViewController'
 
 end
