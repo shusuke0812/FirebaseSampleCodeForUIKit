@@ -11,6 +11,7 @@ import UIKit
 class MainBaseView: UIView {
     
     @IBOutlet weak var advertisingImageView: UIImageView!
+    @IBOutlet weak var tableView: UITableView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

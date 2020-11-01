@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		57C948E33D882401F98E355C /* Pods_FirebaseSampleCodeForUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9EFC205D9AAA6F00A8C1A19 /* Pods_FirebaseSampleCodeForUIKit.framework */; };
 		9C82C781254EFD4B00A1531B /* MainBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C82C780254EFD4B00A1531B /* MainBaseView.swift */; };
+		9C82C7A1254F001B00A1531B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C82C7A0254F001B00A1531B /* MainViewModel.swift */; };
 		9C8E3F8F24CA6968003D5BA6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8E3F8E24CA6967003D5BA6 /* TableViewCell.swift */; };
 		9C8E3F9124CA6A29003D5BA6 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C8E3F9024CA6A29003D5BA6 /* TableViewCell.xib */; };
 		9C93623A25136540007AB0FC /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C93623925136540007AB0FC /* UIViewController+Extension.swift */; };
@@ -30,6 +31,7 @@
 		5BE710D630BE74117C7A67EA /* Pods-FirebaseSampleCodeForUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseSampleCodeForUIKit.release.xcconfig"; path = "Target Support Files/Pods-FirebaseSampleCodeForUIKit/Pods-FirebaseSampleCodeForUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		7ACA4749F43F775A427BD212 /* Pods-FirebaseSampleCodeForUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseSampleCodeForUIKit.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseSampleCodeForUIKit/Pods-FirebaseSampleCodeForUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		9C82C780254EFD4B00A1531B /* MainBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBaseView.swift; sourceTree = "<group>"; };
+		9C82C7A0254F001B00A1531B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		9C8E3F8E24CA6967003D5BA6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		9C8E3F9024CA6A29003D5BA6 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		9C93623925136540007AB0FC /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -68,6 +70,14 @@
 				9C82C780254EFD4B00A1531B /* MainBaseView.swift */,
 			);
 			path = BaseView;
+			sourceTree = "<group>";
+		};
+		9C82C79F254F000900A1531B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9C82C7A0254F001B00A1531B /* MainViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		9C8E3F8A24CA67AF003D5BA6 /* Storyboard */ = {
@@ -139,6 +149,7 @@
 		9CC10AB2249DAC1D008020D7 /* FirebaseSampleCodeForUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				9C82C79F254F000900A1531B /* ViewModel */,
 				9C93623825136521007AB0FC /* Extensions */,
 				9C8E3F8C24CA67C9003D5BA6 /* CustomView */,
 				9C8E3F8B24CA67C0003D5BA6 /* ViewController */,
@@ -297,6 +308,7 @@
 				9C93623A25136540007AB0FC /* UIViewController+Extension.swift in Sources */,
 				9CCDE4292513502B00FBA1CE /* HomeTabBarControllerViewController.swift in Sources */,
 				9CC10AB4249DAC1D008020D7 /* AppDelegate.swift in Sources */,
+				9C82C7A1254F001B00A1531B /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

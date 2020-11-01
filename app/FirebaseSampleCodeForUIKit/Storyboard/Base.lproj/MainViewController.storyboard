@@ -51,11 +51,9 @@
                         </constraints>
                         <connections>
                             <outlet property="advertisingImageView" destination="lp2-he-jPy" id="bWa-JT-Pyh"/>
+                            <outlet property="tableView" destination="wEi-K1-aJY" id="Xdf-sP-LJg"/>
                         </connections>
                     </view>
-                    <connections>
-                        <outlet property="tableView" destination="wEi-K1-aJY" id="obO-Tm-huE"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
