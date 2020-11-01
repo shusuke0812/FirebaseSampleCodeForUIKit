@@ -13,7 +13,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="FirebaseSampleCodeForUIKit" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="MainBaseView" customModule="FirebaseSampleCodeForUIKit" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -33,7 +33,6 @@
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lp2-he-jPy">
                                 <rect key="frame" x="0.0" y="742" width="414" height="120"/>
-                                <color key="backgroundColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="Lf9-kh-Lcy"/>
                                 </constraints>
@@ -50,6 +49,9 @@
                             <constraint firstItem="wEi-K1-aJY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="prw-ux-WzX"/>
                             <constraint firstItem="wEi-K1-aJY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uv8-V4-B5I"/>
                         </constraints>
+                        <connections>
+                            <outlet property="advertisingImageView" destination="lp2-he-jPy" id="bWa-JT-Pyh"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="wEi-K1-aJY" id="obO-Tm-huE"/>

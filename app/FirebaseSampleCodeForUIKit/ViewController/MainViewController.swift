@@ -12,6 +12,9 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var tableView: UITableView!
     
+    // BaseView
+    private var baseView: MainBaseView { return self.view as! MainBaseView }
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
