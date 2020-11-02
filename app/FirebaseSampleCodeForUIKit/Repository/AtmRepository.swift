@@ -17,7 +17,7 @@ protocol AtmRepositoryProtocol {
     ///   - atmId: atmドキュメントID
     ///   - onSuccess: 成功した時に呼ばれる
     ///   - onError: 失敗した時に呼ばれる
-    func getAtms(atmId: String,
+    func getAtm(atmId: String,
                  onSuccess: @escaping (_ atm: Atm) -> Void,
                  onError: @escaping (Error) -> Void)
 }
@@ -26,7 +26,7 @@ class AtmRepository: AtmRepositoryProtocol {
 }
 
 extension AtmRepository {
-    func getAtms(atmId: String, onSuccess: @escaping (_ atm: Atm) -> Void, onError: @escaping (Error) -> Void) {
+    func getAtm(atmId: String, onSuccess: @escaping (_ atm: Atm) -> Void, onError: @escaping (Error) -> Void) {
         let db: Firestore = Firestore.firestore()
         let ref: DocumentReference = db.collection("atms").document(atmId)
         
