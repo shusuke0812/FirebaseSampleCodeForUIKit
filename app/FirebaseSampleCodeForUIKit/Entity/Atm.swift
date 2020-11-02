@@ -10,15 +10,15 @@ import Foundation
 
 struct Atm: Codable {
     /// ATM支店名
-    internal var atmName: String
+    internal var atmName: String = ""
     /// ATM住所
-    internal var atmAddress: String
+    internal var atmAddress: String = ""
     /// ATM種別
-    internal var atmKind: String
+    internal var atmKind: String = ""
     /// お気に入りフラグ
     internal var favorite: Bool?
     /// アイコン
-    internal var iconImage: String
+    internal var iconImage: String = ""
     
     enum CodingKeys: String, CodingKey {
         case atmName
@@ -28,10 +28,18 @@ struct Atm: Codable {
         case iconImage
     }
     
-    init(atmName: String, atmAddress: String, atmKind: String, iconImage: String) {
-        self.atmName = atmName
-        self.atmAddress = atmAddress
-        self.atmKind = atmKind
-        self.iconImage = iconImage
+    init() {
+        self.favorite = nil
+    }
+}
+
+extension Atm {
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(self.atmName, forKey: .atmName)
+        try container.encode(self.atmAddress, forKey: .atmAddress)
+        try container.encode(self.atmKind, forKey: .atmKind)
+        try container.encode(self.favorite, forKey: .favorite)
+        try container.encode(self.iconImage, forKey: .iconImage)
     }
 }
