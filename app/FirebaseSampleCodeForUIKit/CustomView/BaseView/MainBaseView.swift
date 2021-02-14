@@ -9,18 +9,17 @@
 import UIKit
 
 class MainBaseView: UIView {
-    
-    @IBOutlet weak var advertisingImageView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.setUI()
+        self.initUI()
     }
 }
-
+// MARK: - Initialized Method
 extension MainBaseView {
-    private func setUI() {
-        self.advertisingImageView.backgroundColor = .lightGray
+    private func initUI() {
+        let nib = UINib(nibName: "TableViewCell", bundle: nil)
+        self.tableView.register(nib, forCellReuseIdentifier: "Cell")
     }
 }

@@ -9,25 +9,21 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-
     @IBOutlet weak var atmImage: UIImageView!
     @IBOutlet weak var atmKind: UILabel!
     @IBOutlet weak var atmName: UILabel!
     @IBOutlet weak var atmAddress: UILabel!
     @IBOutlet weak var atmFavoriteLabel: UIButton!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+}
+// MARK: - Setting UI Method
+extension TableViewCell {
+    func setUI(atm: Atm) {
+        self.atmName.text = atm.atmName
+        self.atmKind.text = atm.atmKind
+        self.atmAddress.text = atm.atmAddress
     }
-    @IBAction func atmFavoriteButton(_ sender: Any) {
-    }
-    
 }
