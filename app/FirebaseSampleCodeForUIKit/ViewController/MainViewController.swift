@@ -9,34 +9,44 @@
 import UIKit
 
 class MainViewController: UIViewController {
-    
     /// BaseView
-    private var baseView: MainBaseView { return self.view as! MainBaseView }
+    private var baseView: MainBaseView { self.view as! MainBaseView }
     /// ViewModel
     private var viewModel: MainViewModel!
     
-    // MARK: - Lifecycle
+    // MARK: - Lifecycle Method
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.viewModel = MainViewModel()
+        self.viewModel = MainViewModel(atmRepository: AtmRepository())
+        self.setDelegateDataSource()
+        // Firestoreデータを読み込み
+        self.viewModel.getAtms()
+    }
+}
+// MARK: - Initialized Method
+extension MainViewController {
+    private func setDelegateDataSource() {
         self.baseView.tableView.dataSource = self.viewModel
         self.baseView.tableView.delegate = self
-        
-        // セルタップを無効にする
-        #if false
-        self.baseView.tableView.allowsSelection = false
-        #endif
-        
-        // TableViewCellを読み込み
-        let nib = UINib(nibName: "TableViewCell", bundle: nil)
-        self.baseView.tableView.register(nib, forCellReuseIdentifier: "Cell")
+        self.viewModel.delegate = self
+    }
+    private func transitionMainDetailPage() {
+        let s = UIStoryboard(name: "MainDetailViewController", bundle: nil)
+        let vc = s.instantiateInitialViewController() as! MainDetailViewController
+        self.present(vc, animated: true, completion: nil)
     }
 }
 // MARK: - TableView Delegate Method
 extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let s: UIStoryboard = UIStoryboard(name: "MainDetailViewController", bundle: nil)
-        let vc: MainDetailViewController = s.instantiateInitialViewController() as! MainDetailViewController
-        self.present(vc, animated: true, completion: nil)
+    }
+}
+// MARK: - MainViewModel Delegate Method
+extension MainViewController: MainViewModelDelegate {
+    func didSuccessGetAtm() {
+        self.baseView.tableView.reloadData()
+    }
+    func didFailedGetAtm(errorMessage: String) {
+        print(errorMessage)
     }
 }
