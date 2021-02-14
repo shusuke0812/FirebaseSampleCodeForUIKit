@@ -12,35 +12,36 @@ import FirebaseFirestore
 import FirebaseFirestoreSwift
 
 protocol AtmRepositoryProtocol {
-    /// ATM情報を取得する
+    /// ATM情報一覧を取得する
     /// - Parameters:
-    ///   - atmId: atmドキュメントID
     ///   - onSuccess: 成功した時に呼ばれる
     ///   - onError: 失敗した時に呼ばれる
-    func getAtm(atmId: String,
-                 onSuccess: @escaping (_ atm: Atm) -> Void,
-                 onError: @escaping (Error) -> Void)
+    func getAtms(onSuccess: @escaping (_ atms: [(documentId: String, atm: Atm)]) -> Void, onError: @escaping (Error) -> Void)
 }
-
 class AtmRepository: AtmRepositoryProtocol {
 }
-
+// MARK: - Firebase Firestore Method
 extension AtmRepository {
-    func getAtm(atmId: String, onSuccess: @escaping (_ atm: Atm) -> Void, onError: @escaping (Error) -> Void) {
+    func getAtms(onSuccess: @escaping (_ atms: [(documentId: String, atm: Atm)]) -> Void, onError: @escaping (Error) -> Void) {
         let db: Firestore = Firestore.firestore()
-        let ref: DocumentReference = db.collection("atms").document(atmId)
+        let collectionReferencce = db.collection("atms")
         
-        ref.getDocument { (snapshot, error) in
+        collectionReferencce.getDocuments { (snapshot, error) in
             if let error = error {
                 print("DEBUG: atmの取得に失敗しました -> \(error)")
-            }
-            guard let snapshot = snapshot?.data() else { return }
-            do {
-                let atm = try Firestore.Decoder().decode(Atm.self, from: snapshot)
-                onSuccess(atm)
-            } catch (let error ) {
                 onError(error)
                 return
+            }
+            guard let snapshot = snapshot else { return }
+            var atms: [(documentId: String, atm: Atm)] = []
+            do {
+                for document in snapshot.documents {
+                    let atm = try Firestore.Decoder().decode(Atm.self, from: document.data())
+                    atms.append((documentId: document.documentID, atm: atm))
+                }
+                onSuccess(atms)
+            } catch {
+                onError(error)
             }
         }
     }
