@@ -8,21 +8,47 @@
 
 import UIKit
 
-class MainViewModel: NSObject {
-    
+protocol MainViewModelDelegate: class {
+    /// atmの取得に成功した
+    func didSuccessGetAtm()
+    /// atmの取得に失敗した
+    /// - Parameter errorMessage: エラーメッセージ
+    func didFailedGetAtm(errorMessage: String)
 }
 
-// MARK: - TableView DataSource
+class MainViewModel: NSObject {
+    /// atmリポジトリ
+    private let atmRepository: AtmRepositoryProtocol
+    /// デリゲート
+    internal weak var delegate: MainViewModelDelegate?
+    /// atm
+    var atms: [(documentId: String, atm: Atm)] = []
+    
+    init(atmRepository: AtmRepositoryProtocol) {
+        self.atmRepository = atmRepository
+    }
+}
+
+// MARK: - TableView DataSource Method
 extension MainViewModel: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-           return 15
+        return self.atms.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // 再利用可能なCellを得る
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        // 値を設定する
-        cell.textLabel!.text = "Row \(indexPath.row)"
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
+        cell.setUI(atm: self.atms[indexPath.row].atm)
         return cell
+    }
+}
+// MARK: - Firebase Firestore Method
+extension MainViewModel {
+    func getAtms() {
+        self.atmRepository.getAtms(onSuccess: { [weak self] atms in
+            self?.atms = atms
+            self?.delegate?.didSuccessGetAtm()
+        }) { error in
+            print(error.localizedDescription)
+            self.delegate?.didFailedGetAtm(errorMessage: "ATM情報一覧の取得に失敗しました")
+        }
     }
 }
