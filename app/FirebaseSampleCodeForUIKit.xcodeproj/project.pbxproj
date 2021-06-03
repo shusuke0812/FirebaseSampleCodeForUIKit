@@ -214,6 +214,7 @@
 				9CC10AAD249DAC1D008020D7 /* Frameworks */,
 				9CC10AAE249DAC1D008020D7 /* Resources */,
 				4C875DF19CDF00776574264C /* [CP] Embed Pods Frameworks */,
+				9C93585D2668D13E009EF2A1 /* Firebaase Crashlytics Run Script */,
 			);
 			buildRules = (
 			);
@@ -315,6 +316,26 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirebaseSampleCodeForUIKit/Pods-FirebaseSampleCodeForUIKit-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9C93585D2668D13E009EF2A1 /* Firebaase Crashlytics Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Firebaase Crashlytics Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -391,7 +412,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;

@@ -13,6 +13,7 @@ target 'FirebaseSampleCodeForUIKit' do
 	pod 'Firebase/Core'
 	pod 'Firebase/Firestore'
 	pod 'Firebase/Functions'
+	pod 'Firebase/Crashlytics'
 	pod 'FirebaseFirestoreSwift', '~> 0.2'
 
   # etc
