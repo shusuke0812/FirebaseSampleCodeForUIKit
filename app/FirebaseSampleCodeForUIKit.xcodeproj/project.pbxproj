@@ -24,14 +24,16 @@
 		9CCDE4292513502B00FBA1CE /* HomeTabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCDE4282513502B00FBA1CE /* HomeTabBarControllerViewController.swift */; };
 		9CDEFED024F4068800083D36 /* MainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDEFECF24F4068800083D36 /* MainDetailViewController.swift */; };
 		9CDEFED224F4069C00083D36 /* MainDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CDEFED124F4069C00083D36 /* MainDetailViewController.storyboard */; };
-		9CDEFED424F4232900083D36 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CDEFED324F4232800083D36 /* GoogleService-Info.plist */; };
 		9CEC0D9E251354610045A7FF /* PostViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC0D9D251354610045A7FF /* PostViewController.storyboard */; };
 		9CEC0DA02513546F0045A7FF /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC0D9F2513546F0045A7FF /* PostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F00CA9B553FF118EC4A8AC4 /* Pods-FirebaseSampleCodeForUIKit.product.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseSampleCodeForUIKit.product.xcconfig"; path = "Target Support Files/Pods-FirebaseSampleCodeForUIKit/Pods-FirebaseSampleCodeForUIKit.product.xcconfig"; sourceTree = "<group>"; };
 		5BE710D630BE74117C7A67EA /* Pods-FirebaseSampleCodeForUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseSampleCodeForUIKit.release.xcconfig"; path = "Target Support Files/Pods-FirebaseSampleCodeForUIKit/Pods-FirebaseSampleCodeForUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		7ACA4749F43F775A427BD212 /* Pods-FirebaseSampleCodeForUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseSampleCodeForUIKit.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseSampleCodeForUIKit/Pods-FirebaseSampleCodeForUIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		9C372B3F266CBFBC0030A5AE /* GoogleService-Info-Staging.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Staging.plist"; sourceTree = "<group>"; };
+		9C372B41266CC0490030A5AE /* CopyGoogleServiceInfo.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = CopyGoogleServiceInfo.sh; sourceTree = "<group>"; };
 		9C82C780254EFD4B00A1531B /* MainBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBaseView.swift; sourceTree = "<group>"; };
 		9C82C7A0254F001B00A1531B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		9C8B70F225501DC400FCDF54 /* AtmRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmRepository.swift; sourceTree = "<group>"; };
@@ -39,7 +41,7 @@
 		9C8E3F8E24CA6967003D5BA6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		9C8E3F9024CA6A29003D5BA6 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		9C93623925136540007AB0FC /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		9CC10AB0249DAC1D008020D7 /* FirebaseSampleCodeForUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseSampleCodeForUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CC10AB0249DAC1D008020D7 /* FirebaseSampleCodeForUIKit.st.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseSampleCodeForUIKit.st.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC10AB3249DAC1D008020D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CC10AB7249DAC1D008020D7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9CC10ABA249DAC1D008020D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainViewController.storyboard; sourceTree = "<group>"; };
@@ -50,9 +52,10 @@
 		9CCDE4282513502B00FBA1CE /* HomeTabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarControllerViewController.swift; sourceTree = "<group>"; };
 		9CDEFECF24F4068800083D36 /* MainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailViewController.swift; sourceTree = "<group>"; };
 		9CDEFED124F4069C00083D36 /* MainDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainDetailViewController.storyboard; sourceTree = "<group>"; };
-		9CDEFED324F4232800083D36 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9CDEFED324F4232800083D36 /* GoogleService-Info-Product.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Product.plist"; sourceTree = "<group>"; };
 		9CEC0D9D251354610045A7FF /* PostViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostViewController.storyboard; sourceTree = "<group>"; };
 		9CEC0D9F2513546F0045A7FF /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		CC8499B805A8DE2C66A48253 /* Pods-FirebaseSampleCodeForUIKit.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseSampleCodeForUIKit.staging.xcconfig"; path = "Target Support Files/Pods-FirebaseSampleCodeForUIKit/Pods-FirebaseSampleCodeForUIKit.staging.xcconfig"; sourceTree = "<group>"; };
 		E9EFC205D9AAA6F00A8C1A19 /* Pods_FirebaseSampleCodeForUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseSampleCodeForUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -68,6 +71,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C372B2E266CB9490030A5AE /* Script */ = {
+			isa = PBXGroup;
+			children = (
+				9C372B41266CC0490030A5AE /* CopyGoogleServiceInfo.sh */,
+			);
+			path = Script;
+			sourceTree = "<group>";
+		};
+		9C372B2F266CB9520030A5AE /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				9CC10AC1249DAC21008020D7 /* Info.plist */,
+				9C372B30266CB95E0030A5AE /* Firebase */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		9C372B30266CB95E0030A5AE /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				9C372B3F266CBFBC0030A5AE /* GoogleService-Info-Staging.plist */,
+				9CDEFED324F4232800083D36 /* GoogleService-Info-Product.plist */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		9C82C77F254EFD3600A1531B /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,7 +190,7 @@
 		9CC10AB1249DAC1D008020D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9CC10AB0249DAC1D008020D7 /* FirebaseSampleCodeForUIKit.app */,
+				9CC10AB0249DAC1D008020D7 /* FirebaseSampleCodeForUIKit.st.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,6 +198,8 @@
 		9CC10AB2249DAC1D008020D7 /* FirebaseSampleCodeForUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				9C372B2F266CB9520030A5AE /* Plist */,
+				9C372B2E266CB9490030A5AE /* Script */,
 				9C8B70F625501EBE00FCDF54 /* Entity */,
 				9C8B70F125501D0A00FCDF54 /* Repository */,
 				9C82C79F254F000900A1531B /* ViewModel */,
@@ -179,8 +210,6 @@
 				9CC10AB3249DAC1D008020D7 /* AppDelegate.swift */,
 				9CC10ABC249DAC21008020D7 /* Assets.xcassets */,
 				9CC10ABE249DAC21008020D7 /* LaunchScreen.storyboard */,
-				9CDEFED324F4232800083D36 /* GoogleService-Info.plist */,
-				9CC10AC1249DAC21008020D7 /* Info.plist */,
 			);
 			path = FirebaseSampleCodeForUIKit;
 			sourceTree = "<group>";
@@ -190,6 +219,8 @@
 			children = (
 				7ACA4749F43F775A427BD212 /* Pods-FirebaseSampleCodeForUIKit.debug.xcconfig */,
 				5BE710D630BE74117C7A67EA /* Pods-FirebaseSampleCodeForUIKit.release.xcconfig */,
+				CC8499B805A8DE2C66A48253 /* Pods-FirebaseSampleCodeForUIKit.staging.xcconfig */,
+				3F00CA9B553FF118EC4A8AC4 /* Pods-FirebaseSampleCodeForUIKit.product.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -214,6 +245,7 @@
 				9CC10AAD249DAC1D008020D7 /* Frameworks */,
 				9CC10AAE249DAC1D008020D7 /* Resources */,
 				4C875DF19CDF00776574264C /* [CP] Embed Pods Frameworks */,
+				9C372B42266CC53B0030A5AE /* Google Service Info Run Script */,
 				9C93585D2668D13E009EF2A1 /* Firebaase Crashlytics Run Script */,
 			);
 			buildRules = (
@@ -222,7 +254,7 @@
 			);
 			name = FirebaseSampleCodeForUIKit;
 			productName = FirebaseSampleCodeForUIKit;
-			productReference = 9CC10AB0249DAC1D008020D7 /* FirebaseSampleCodeForUIKit.app */;
+			productReference = 9CC10AB0249DAC1D008020D7 /* FirebaseSampleCodeForUIKit.st.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -269,7 +301,6 @@
 				9CC10ABD249DAC21008020D7 /* Assets.xcassets in Resources */,
 				9CDEFED224F4069C00083D36 /* MainDetailViewController.storyboard in Resources */,
 				9CC10ABB249DAC1D008020D7 /* MainViewController.storyboard in Resources */,
-				9CDEFED424F4232900083D36 /* GoogleService-Info.plist in Resources */,
 				9CCDE42725134EC800FBA1CE /* HomeTabBarController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +347,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirebaseSampleCodeForUIKit/Pods-FirebaseSampleCodeForUIKit-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9C372B42266CC53B0030A5AE /* Google Service Info Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Google Service Info Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". ${PROJECT_DIR}/${PROJECT_NAME}/Script/CopyGoogleServiceInfo.sh\n";
+		};
 		9C93585D2668D13E009EF2A1 /* Firebaase Crashlytics Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -334,7 +383,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+			shellScript = "# \"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -379,10 +428,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9CC10AC2249DAC21008020D7 /* Debug */ = {
+		9CC10AC2249DAC21008020D7 /* Staging */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_DISPLAY_NAME_SUFFIX = .st;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -429,20 +479,22 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "${PROJECT_DIR}/${PROJECT_NAME}/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = STAGING;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = Staging;
 		};
-		9CC10AC3249DAC21008020D7 /* Release */ = {
+		9CC10AC3249DAC21008020D7 /* Product */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_DISPLAY_NAME_SUFFIX = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -483,53 +535,55 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "${PROJECT_DIR}/${PROJECT_NAME}/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRODUCT;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Product;
 		};
-		9CC10AC5249DAC21008020D7 /* Debug */ = {
+		9CC10AC5249DAC21008020D7 /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7ACA4749F43F775A427BD212 /* Pods-FirebaseSampleCodeForUIKit.debug.xcconfig */;
+			baseConfigurationReference = CC8499B805A8DE2C66A48253 /* Pods-FirebaseSampleCodeForUIKit.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XL9QYTD77;
-				INFOPLIST_FILE = FirebaseSampleCodeForUIKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FirebaseSampleCodeForUIKit/Plist/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.shusuke.ota.FirebaseSampleCodeForUIKit$(APP_DISPLAY_NAME_SUFFIX)";
+				PRODUCT_NAME = "$(TARGET_NAME)$(APP_DISPLAY_NAME_SUFFIX)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		9CC10AC6249DAC21008020D7 /* Product */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F00CA9B553FF118EC4A8AC4 /* Pods-FirebaseSampleCodeForUIKit.product.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2XL9QYTD77;
+				INFOPLIST_FILE = "$(SRCROOT)/FirebaseSampleCodeForUIKit/Plist/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.shusuke.ota.FirebaseSampleCodeForUIKit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)$(APP_DISPLAY_NAME_SUFFIX)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
-		};
-		9CC10AC6249DAC21008020D7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BE710D630BE74117C7A67EA /* Pods-FirebaseSampleCodeForUIKit.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2XL9QYTD77;
-				INFOPLIST_FILE = FirebaseSampleCodeForUIKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.shusuke.ota.FirebaseSampleCodeForUIKit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
+			name = Product;
 		};
 /* End XCBuildConfiguration section */
 
@@ -537,20 +591,20 @@
 		9CC10AAB249DAC1D008020D7 /* Build configuration list for PBXProject "FirebaseSampleCodeForUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9CC10AC2249DAC21008020D7 /* Debug */,
-				9CC10AC3249DAC21008020D7 /* Release */,
+				9CC10AC2249DAC21008020D7 /* Staging */,
+				9CC10AC3249DAC21008020D7 /* Product */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Product;
 		};
 		9CC10AC4249DAC21008020D7 /* Build configuration list for PBXNativeTarget "FirebaseSampleCodeForUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9CC10AC5249DAC21008020D7 /* Debug */,
-				9CC10AC6249DAC21008020D7 /* Release */,
+				9CC10AC5249DAC21008020D7 /* Staging */,
+				9CC10AC6249DAC21008020D7 /* Product */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Product;
 		};
 /* End XCConfigurationList section */
 	};

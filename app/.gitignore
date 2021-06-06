@@ -20,6 +20,7 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
+xcshareddata/
 
 ## Other
 *.moved-aside
@@ -81,6 +82,6 @@ fastlane/test_output
 iOSInjectionProject/
 
 # Firebase
-GoogleService-Info.plist
+FirebaseSampleCodeForUIKit/Plist/Firebase/*.plist
 
 # End of https://www.gitignore.io/api/swift
